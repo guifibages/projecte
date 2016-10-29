@@ -1,0 +1,150 @@
+$TTL 3600
+@	IN	SOA	ns1.guifibages.net. noc.guifibages.net. (
+			2016202115
+			3H
+			15M
+			1W
+			1D )
+
+                    IN NS     ns1
+                    IN MX  10 smtp
+                    IN MX  20 torredelmoro
+mandrill._domainkey  IN TXT  "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;"
+@                    IN TXT  "v=spf1 include:spf.mandrillapp.com ?all"
+
+_xmpp-client._tcp 900 IN SRV 5 0 5222 jabber.guifibages.net.
+_xmpp-server._tcp 900 IN SRV 5 0 5269 jabber.guifibages.net.
+_jabber._tcp      900 IN SRV 5 0 5269 jabber.guifibages.net.
+_sip._udp	SRV 0 1 5060	sip1.guifibages.net.
+_sip._tcp	SRV 0 1 5060	sip1.guifibages.net.
+
+ns1                 IN A      10.138.0.20
+@                   IN A      10.228.17.20
+
+; Registre per reenviar ports en base a servei
+;   mitjançant NAT en MNBufalventST1
+;   80, 443 => webfront01
+;   22 => shell01
+
+distributed         IN A      10.228.17.20
+nas		    IN A      10.228.19.75
+			AAAA	2a00:1508:51c0:0:208:9bff:fed9:9d90
+muntanyadesal       IN A      10.228.17.30
+oldmds              IN A      10.228.17.30
+mds                 IN A      10.228.17.31
+eurocopter	    IN A      10.228.17.32
+webfrontdb01        IN A      10.228.17.35
+sedagua 	    IN A      10.228.17.35
+noc                 IN CNAME  webfrontdb01
+dnsmaster           IN A      10.228.17.34
+server              IN A      10.228.17.4
+tdm                 IN CNAME  torredelmoro 
+torredelmoro        IN A      10.138.0.20
+                       AAAA   2a00:1508::109:69:11:113
+santmateu	    IN A      10.228.23.70
+descarregues        IN A      10.228.17.5
+codiad			IN A	10.228.17.42
+voip                IN A      10.228.17.17
+develop             IN A      10.228.17.18
+projectes           IN A      10.228.17.35
+git                 IN CNAME  develop
+db01                IN A      10.228.17.21
+shell01             IN A      10.228.17.22
+sip1		    IN A      10.228.17.30
+mailman01           IN A      10.228.17.4
+puppet              IN CNAME  admin
+puppetdb            IN CNAME  admin
+admin               IN A      10.228.17.24
+webfront01	    IN A      10.228.17.25
+foreman             IN CNAME  webfront01
+monitor		    IN A      10.228.17.26
+ldap                IN CNAME  aaa
+radius              IN CNAME  aaa
+aaa                 IN A      10.228.17.29
+router              IN A      10.228.20.198
+vpn                 IN A      10.228.20.198
+ignacio-test        IN A      10.228.17.13
+lallum		    IN A      10.228.17.35
+adsl                IN A      10.228.16.35
+guifiserver         IN A      10.228.17.4
+lists		    IN A      10.138.0.20
+                       AAAA   2a00:1508::109:69:11:113
+
+lists               IN MX  10 torredelmoro
+box                 IN A 10.228.17.19
+jabber              IN A 10.228.17.19
+conference          IN CNAME  jabber
+smtp    	    IN A      10.138.0.20
+aptcache	    IN A      10.228.17.4
+aptcache	    IN TXT    "Servei APT Cache Guifibages. Configurar fitxer /etc/apt/apt.conf.d/02proxy amb contingut:" " Acquire::http{ Proxy "http://aptcache.guifibages.net:3142"; };" 
+ftp		    IN CNAME  descarregues
+grafiques           IN A 10.228.17.4 
+backups             IN A 10.228.17.3 
+dudle               IN CNAME  server
+www                 IN CNAME  server
+aircontrol          IN CNAME  webfrontdb01
+mldonkey	    IN CNAME  nas
+owncloud            IN CNAME  webfrontdb01
+speedtest           IN CNAME  nas
+proxy               IN A 10.228.17.4
+proxyvallspala	    IN A 10.228.23.103
+proxybf		    IN A 10.228.17.4
+ntp                 IN A 10.228.17.4
+cacti		    IN CNAME  webfrontdb01
+logs		    IN A 10.228.17.3
+airvision           IN CNAME webfrontdb01
+
+_ldaps._tcp         IN SRV  0  0   636 aaa
+_https._tcp         IN SRV  0  0   443 webfront01
+_http._tcp          IN SRV  0  0    80 webfront01
+_mysql._tcp         IN SRV  0  0  3306 server
+_smtp._tcp          IN SRV  0  0    25 smtp
+_apt-cache._tcp     IN SRV  0  0  3142 aptcache
+
+;;;;Supernodes ;;;;;;;
+bf                  IN A      10.228.17.1
+va14                IN A      10.228.17.129
+sc1                  IN A      10.228.21.241
+sc2                 IN  A     10.228.20.97 
+pf1                  IN A      10.228.18.1
+pf2                 IN A      10.228.20.241
+si                  IN A      10.228.18.33
+joan23              IN  A     10.228.18.129
+pb1                  IN A      10.228.20.65
+pb2                 IN A       10.228.21.225
+jaume1              IN A      10.228.18.65
+pt                  IN A      10.228.20.225
+
+ctd1                IN  A     10.228.5.1
+ctd2                IN  A     10.228.5.2
+stjvtda               IN  A     10.228.22.1
+smatdb              IN  A     10.228.23.1
+
+sallent             IN NS     ns1
+
+;;;; GIL ;;;;;;;
+castelladral        IN A      10.228.5.3
+*.castelladral      IN A      10.228.5.3
+
+;;;; ALBERT ;;;;;;;;
+ahoms               IN A      10.228.18.33
+stignasi            IN CNAME  ahoms
+napbuf              IN CNAME  webfrontdb01
+educarenfamilia     IN CNAME  napbuf
+
+;;;; IGNACIO
+docker                     IN A    188.226.199.79
+
+agora                      IN A    188.226.199.79
+agora                      IN MX   10 mail
+agora                      IN MX   20 torredelmoro.guifibages.net.
+agora                      IN TXT  "v=spf1 include:spf.mandrillapp.com ?all"
+mandrill._domainkey.agora  IN TXT  "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;"
+
+
+;;;;;;;ALeix SOLE, projecte SMARTWeatherstation ;;;;;;;
+sws.guifibages.cat	IN CNAME  webfrontdb01
+
+
+gil	120		IN A 213.148.207.207
+*.gil	120		IN A 213.148.207.207

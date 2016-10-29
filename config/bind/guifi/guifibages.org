@@ -1,0 +1,15 @@
+$TTL 3600
+@	IN	SOA	ns1.guifibages.net. noc.guifibages.net. (
+			2012110101
+			3H
+			15M
+			1W
+			1D )
+
+                    IN NS     ns1.guifibages.net.
+                    IN NS     ns6.gandi.net.
+                    IN MX  10 server.guifibages.net.
+                    IN MX  20 torredelmoro.guifibages.net.
+@                   IN A      10.228.17.3
+www IN CNAME @
+ftp IN CNAME @

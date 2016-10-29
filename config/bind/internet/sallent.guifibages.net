@@ -1,0 +1,15 @@
+$TTL 3600
+@ IN SOA ns1.guifibages.net. noc.guifibages.net. (
+                              2015032801      ; serial
+                              3H              ; refresh
+                              15M             ; retry
+                              1W              ; expiry
+                              1D )            ; minimum
+
+                    IN NS     ns1.guifibages.net.
+                    IN NS     ns6.gandi.net.
+                    IN MX  10 accela.bedynamic.net.
+@                   IN A      5.10.206.13
+st1.verdura         IN A      5.10.206.13
+mir.verdura         IN CNAME  st1.verdura
+hayabusa.verdura    IN CNAME  st1.verdura

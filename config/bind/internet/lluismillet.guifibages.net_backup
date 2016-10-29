@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+lluismillet.guifibages.net IN SOA ns1.guifibages.net. noc.guifibages.net. (
+				2016022501 ; serial
+				10800      ; refresh (3 hours)
+				900        ; retry (15 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	ns1.guifibages.net.
+			NS	ns6.gandi.net.
+			A	213.148.199.20
+$ORIGIN lluismillet.guifibages.net.
+bittorrent		CNAME	st1
+dude			CNAME	st1
+fibracat		CNAME	st1
+fw			CNAME	st1
+grafiques		CNAME	st1
+owncloud		CNAME	st1
+plex			CNAME	st1
+st1			A	213.148.199.20
+unifi			CNAME	st1

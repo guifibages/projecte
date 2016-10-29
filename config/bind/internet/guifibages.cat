@@ -1,0 +1,26 @@
+$TTL 3600
+@	IN	SOA	ns1.guifibages.net. noc.guifibages.net. (
+			2015111301
+			3H
+			15M
+			1W
+			1D )
+
+                    IN NS     ns1.guifibages.net.
+                    IN NS     ns6.gandi.net.
+                    IN MX  10 mail.guifibages.net.
+                    IN MX  20 torredelmoro.guifibages.net.
+
+@                   IN A     192.30.252.153
+@                   IN A     192.30.252.154
+@                   IN TXT   google-site-verification=o-IeBI3GLEAAlMIVA6QYSydIV_PP-IePkRZJnY7PDm0
+@		    IN AAAA  2a00:1508:5100:0:5054:ff:fe77:382a
+www                 IN CNAME @
+ftp                 IN CNAME associacio.guifibages.net
+sws		    IN CNAME @
+
+_xmpp-client._tcp            900 IN SRV 5 0 5222 artemis.xin.cat.
+_xmpp-server._tcp            900 IN SRV 5 0 5269 artemis.xin.cat.
+_jabber._tcp                 900 IN SRV 5 0 5269 artemis.xin.cat.
+_xmpp-client._tcp.conference 900 IN SRV 5 0 5222 artemis.xin.cat.
+_xmpp-server._tcp.conference 900 IN SRV 5 0 5269 artemis.xin.cat.

@@ -1,0 +1,56 @@
+$TTL 3600
+@ IN SOA ns1.guifibages.net. noc.guifibages.net. (
+                              2014031301      ; serial
+                              3H              ; refresh
+                              15M             ; retry
+                              1W              ; expiry
+                              1D )            ; minimum
+
+                    IN NS     ns1.guifibages.net.
+                    IN MX  10 accela.bedynamic.net.
+@                   IN A      10.228.44.10
+		
+st1.ajuntament		IN A	10.228.12.1
+server.ajuntament	IN A	10.228.12.2
+
+st1.torretel		IN A	10.228.16.129
+ctd.torretel		IN A	10.228.16.130
+ts8.torretel		IN A	10.228.16.131
+camn.torretel		IN A	10.228.16.132
+cams.torretel		IN A	10.228.16.133
+nav.torretel		IN A	10.228.16.134
+camp.torretel		IN A	10.228.16.135
+cap.torretel		IN A	10.228.16.136
+stf.torretel		IN A	10.228.16.137
+
+; st1.torretel		IN A	10.228.12.65
+st2.torretel		IN A	10.228.16.65
+hc.torretel		IN A	10.228.16.66
+bf.torretel		IN A	10.228.16.69
+nord.torretel		IN A	10.228.16.70
+sud.torretel		IN A	10.228.16.71
+
+; st2.torretel		IN A	10.228.16.161
+vrdr.wds.torretel	IN A	10.228.16.132
+st4.torretel		IN A	10.228.17.33
+
+st1.campanar		IN A	10.228.12.97
+; st1.campanar		IN A	10.228.12.129
+st2.campanar		IN A	10.228.12.161
+; st2.campanar		IN A	10.228.12.193
+ap5.campanar		IN A	10.228.16.161
+ap6.campanar		IN A	10.228.16.225
+
+; st1.cornet		IN A	10.228.12.225
+st1.cornet		IN A	10.228.16.1
+
+st1.verdura		IN A	10.228.44.1
+trrtl.wds.verdura	IN A	10.228.44.2
+mir.verdura		IN A	10.228.44.66
+hayabusa.verdura	IN A	10.228.44.67
+verne.verdura		IN A	10.228.44.125
+
+; Cabrianes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+st1.cabrianes		IN A	10.228.19.33
+omni.cabrianes		IN A	10.228.19.34
+st2.cabrianes		IN A	10.228.19.35

@@ -1,0 +1,24 @@
+$TTL 3600
+@	IN	SOA	ns1.guifibages.net. noc.guifibages.net. (
+			2016090501
+			3H
+			15M
+			1W
+			1D )
+
+                    IN NS     ns1.guifibages.net.
+		    IN NS     ns2.guifibages.net.
+                    IN NS     ns6.gandi.net.
+                    IN MX  10 mail
+                    IN MX  20 fb.mail.gandi.net. 
+		    IN MX  30 torredelmoro.guifibages.net.
+		IN A 213.148.207.207
+ftp             IN CNAME  server
+mail	 	IN CNAME  mail.guifibages.net.
+eravella        IN CNAME  server
+grafiques	IN CNAME  server
+www             IN A 213.148.207.207
+smtp            IN CNAME  server
+speedtest       IN CNAME  server
+
+

@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+xevi.guifibages.net	IN SOA	xevi.guifibages.net. ns1.guifibages.net. (
+				2016600301 ; serial
+				10800      ; refresh (3 hours)
+				900        ; retry (15 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	ns1.guifibages.net.
+			NS	xevi.guifibages.net.
+			A	10.228.18.49
+			MX	10 mail.
+$ORIGIN xevi.guifibages.net.
+bittorrent		A	10.228.18.54
+dude			A	10.228.18.53
+grafiques		A	10.228.18.50
+mail			A	10.228.18.54
+owncloud		A	10.228.18.54
+plex			A	10.228.18.54
+st1			A	10.228.18.49
+unifi			A	10.228.18.52

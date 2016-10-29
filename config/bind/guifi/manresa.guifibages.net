@@ -1,0 +1,123 @@
+$TTL 3600
+@ IN SOA ns1.guifibages.net. noc.guifibages.net. (
+                              20140309   ; serial
+                              3H              ; refresh
+                              15M             ; retry
+                              1W              ; expiry
+                              1D )            ; minimum
+
+                    IN NS     ns1.guifibages.net.
+                    IN MX  10 accela.bedynamic.net.
+@                   IN A      10.228.17.1
+
+
+;;  Bufalvent
+st1.bf		IN A	10.228.17.1
+sc.bf		IN A	10.228.17.9
+pf.bf		IN A	10.228.17.8
+va.bf		IN A	10.228.17.11
+sll.bf		IN A	10.228.17.14
+kon.bf		IN A	10.228.17.12
+nord.bf		IN A	10.228.17.7
+sud.bf		IN A	10.228.17.6
+ts8.bf		IN A	10.228.17.59
+mt.bf		IN A	10.228.17.168
+;;Palau Firal 
+st1.pf		IN A	10.228.20.241
+stfdb.pf	IN A	10.228.20.243
+bf.pf		IN A	10.228.20.244
+vil.pf		IN A	10.228.20.245
+est.pf		IN A	10.228.20.246
+oest.pf		IN A	10.228.20.247
+am.pf		IN A	10.228.20.248
+pb.pf		IN A	10.228.20.249
+confine.pf	IN A	10.228.20.250
+ts8.pf		IN A	10.228.20.251
+ts5.pf		IN A	10.228.20.252
+cfals.pf	IN A	10.228.20.253
+
+;;Santa Caterina
+st2.sc		IN A	10.228.21.241
+bf.sc		IN A	10.228.21.243
+sti.sc		IN A	10.228.21.244
+cc.sc		IN A	10.228.21.245
+
+st1.sc		IN A	10.228.20.97
+bcn.sc		IN A	10.228.20.98
+nord.sc		IN A	10.228.20.99
+pb.sc		IN A	10.228.20.100
+
+
+;; PB
+st1.pb		IN A	10.228.20.65
+pt.pb		IN A	10.228.21.227
+9c.pb		IN A	10.228.21.228
+sj.pb		IN A	10.228.21.229
+pf.pb		IN A	10.228.21.230
+nord.pb		IN A	10.228.21.232
+
+
+;; PT
+st1.pt		IN A	10.228.20.225
+pb.pt		IN A	10.228.20.226
+cf.pt		IN A	10.228.20.227
+nord.pt		IN A	10.228.20.229
+
+;;VA
+st1.va		IN A	10.228.17.129
+bf.va		IN A	10.228.17.149
+va28.va		IN A	10.228.17.148
+
+;;STIGNACI
+st1.si		IN A	10.228.18.33
+sc.si		IN A	10.228.18.35
+j23.si		IN A	10.228.18.36
+
+
+;;JOAN XXIII
+st1.j23		IN A	10.228.18.129
+est.j23		IN A	10.228.18.130
+si.j23		IN A	10.228.18.131
+
+;;Aigues Manresa
+st1.am		IN A	10.228.21.129
+nord.am		IN A	10.228.21.130
+stpd.am		IN A	10.228.21.131
+pf.am		IN A	10.228.21.132
+cf.am		IN A	10.228.21.133
+ts.am		IN A	10.228.21.135
+
+;;Aigues Desguats pAgulla
+st1.dpa		IN A	10.228.21.65
+am.dpa		IN A	10.228.21.68
+
+;;Nou Congost
+st1.9c		IN A	10.228.21.193
+sc.9c		IN A	10.228.21.195
+pb.9c		IN A	10.228.21.196
+
+;; Viladordis
+st1.vil		IN A	10.228.17.241
+pf.vil		IN A	10.228.17.243
+nord.vil	IN A	10.228.17.245
+sud.vil		IN A	10.228.17.246
+kon.vil		IN A	10.228.17.247
+
+;; SantFruitos
+st1.stfdb	IN A	10.228.28.1
+est.stfdb	IN A	10.228.28.3
+oest.stfdb	IN A	10.228.28.4
+pf.stfdb	IN A	10.228.28.5
+spd.stfdb	IN A	10.228.28.6
+
+;; Konekia
+st1.kon		IN A	10.228.32.65
+bf.kon		IN A	10.228.32.66
+smo.kon		IN A	10.228.32.67
+tal.kon		IN A	10.228.32.68
+
+;;Castellgalí
+st1.cs.cg	IN A	10.228.27.129
+bf.cs.cg	IN A	10.228.27.130
+nord.cs.cg	IN A	10.228.27.131
+irehom		IN A	10.228.27.132

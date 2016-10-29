@@ -1,0 +1,16 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+lluismillet.guifibages.net IN SOA ns1.guifibages.net. noc.guifibages.net. (
+				2016280301 ; serial
+				10800      ; refresh (3 hours)
+				900        ; retry (15 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	ns1.guifibages.net.
+			A	10.228.18.49
+$ORIGIN lluismillet.guifibages.net.
+dude			A	10.228.18.53
+plex			A	10.228.18.54
+st1			A	10.228.18.49
+unifi			A	10.228.18.52

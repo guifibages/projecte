@@ -1,0 +1,28 @@
+$TTL 3600
+@ IN SOA ns1.guifibages.net. noc.guifibages.net. (
+                              2013031004      ; serial
+                              3H              ; refresh
+                              15M             ; retry
+                              1W              ; expiry
+                              1D )            ; minimum
+
+                    IN NS     ns1.guifibages.net.
+                    IN MX  10 accela.bedynamic.net.
+@                   IN A      10.228.17.1
+
+st1.TorreBelgica		IN A	10.139.107.161
+server.TorreBelgica		IN A	10.139.107.167
+dsl1.TorreBelgica		IN A	10.139.107.162
+poligon.TorreBelgica		IN A	10.139.107.164
+
+st1.Poligon		IN A	10.139.107.193
+torreBelgica.Poligon		IN A	10.139.107.195
+ridolainaPal.Poligon		IN A	10.139.107.194
+
+st1.RidolainaPal		IN A	10.139.107.225
+poligon.RidolainaPal		IN A	10.139.107.226
+ridolainaCasa.RidolainaPal		IN A	10.139.107.227
+ap.RidolainaPal		IN A	10.139.107.228
+
+st1.RidolainaCasa		IN A	10.140.222.1
+ridolainaPal.RidolainaCasa		IN A	10.140.222.2
